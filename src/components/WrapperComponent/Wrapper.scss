@@ -1,0 +1,99 @@
+.main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .break-label-container {
+            background-color: rgb(194, 117, 16);
+            margin: 0 20px;
+            width: 350px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .session-label-container {
+            background-color: rgb(38, 187, 140);
+            margin: 0 20px;
+            width: 350px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 30px;
+        }
+
+        span {
+            margin: 0 20px;
+            background-color: rgba(255,255,255,.2);
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            border-radius: 15px;
+            line-height: 20px;
+            box-shadow: -1px 4px 3px .1px black;
+            font-size: 40px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(255,255,255,.8);
+                color: black;
+            }
+        }
+
+
+        .start-stop-btn {
+            button {
+                cursor: pointer;
+                margin: 5px;
+                width: 200px;
+                height: 50px;
+                background-color: aqua;
+                color: black;
+                border: 1px solid black;
+                border-radius: 5px;
+                font-size: 20px;
+            }
+        }
+
+
+        .reset-btn {
+            button {
+                cursor: pointer;
+                margin: 5px;
+                width: 200px;
+                height: 50px;
+                background-color: rgb(158, 76, 230);
+                color: white;
+                border: 1px solid black;
+                border-radius: 5px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .timer {
+        margin: 50px;
+        width: 820px;
+        border-radius: 10px;
+        font-family:'Courier New', Courier, monospace;
+        font-size: 55px;
+
+        &.session{
+            background-color: rgb(25, 145, 151);
+        }
+
+        &.break {
+            background-color: rgb(151, 96, 25);
+        }
+    }
+}
